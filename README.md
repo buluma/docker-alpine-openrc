@@ -3,7 +3,7 @@ Docker Alpine openrc
 
 This Dockerfile can build containers capable to use openrc.
 
-[![alpine build status](https://img.shields.io/docker/cloud/build/buluma/alpine-openrc.svg)](https://hub.docker.com/repository/docker/buluma/alpine-openrc)
+[![alpine build status](https://github.com/buluma/docker-alpine-openrc/actions/workflows/build-push-action.yml/badge.svg)](https://github.com/buluma/docker-alpine-openrc/actions/workflows/build-push-action.yml)
 
 Branches
 --------
