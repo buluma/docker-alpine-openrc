@@ -1,7 +1,6 @@
-FROM alpine:3
+FROM alpine:edge
 
-LABEL maintainer="Michael Buluma <me@buluma.me.ke>"
-LABEL build_date="2022-02-01"
+LABEL maintainer="Michael Buluma <me@buluma.co.ke>"
 
 ENV container=docker
 
