@@ -1,11 +1,12 @@
 FROM alpine:edge
 
-LABEL maintainer="Michael Buluma <me@buluma.co.ke>"
+LABEL maintainer="Michael Buluma <me@buluma.me.ke>"
+LABEL build_date="2022-02-20"
 
 ENV container=docker
 
 # Enable init.
-RUN apk add --update --no-cache openrc && \
+RUN apk add --update --no-cache sudo openrc python3 && \
     sed -i 's/^\(tty\d\:\:\)/#\1/g' /etc/inittab && \
     sed -i \
       -e 's/#rc_sys=".*"/rc_sys="docker"/g' \
