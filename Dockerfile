@@ -6,7 +6,7 @@ LABEL build_date="2022-02-21"
 ENV container=docker
 
 # Enable init.
-RUN apk add --update --no-cache openrc sudo && \
+RUN apk add --update --no-cache openrc sudo python3 && \
     sed -i 's/^\(tty\d\:\:\)/#\1/g' /etc/inittab && \
     sed -i \
       -e 's/#rc_sys=".*"/rc_sys="docker"/g' \
